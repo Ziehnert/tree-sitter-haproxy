@@ -1,0 +1,23 @@
+{
+    "name": "tree-sitter-haproxy",
+    "version": "0.1.0",
+    "description": "Tree-sitter grammar for HAProxy configuration files",
+    "main": "bindings/node",
+    "scripts": {
+        "test": "tree-sitter test",
+        "generate": "tree-sitter generate"
+    },
+    "keywords": [
+        "tree-sitter",
+        "haproxy",
+        "parser"
+    ],
+    "author": "Simon Ziehnert",
+    "license": "MIT",
+    "dependencies": {
+        "nan": "^2.17.0"
+    },
+    "devDependencies": {
+        "tree-sitter-cli": "^0.20.8"
+    }
+}
