@@ -183,6 +183,7 @@ module.exports = grammar({
                 $.redirect_directive,
                 $.capture_directive,
                 $._proxy_directive,
+                $.use_server_directive,
             ),
 
         _backend_directive: ($) =>
@@ -218,6 +219,7 @@ module.exports = grammar({
                 $.hash_type_directive,
                 $.errorfile_directive,
                 $.generic_directive,
+                $.use_server_directive,
             ),
         _resolvers_directive: ($) =>
             choice(
@@ -277,6 +279,14 @@ module.exports = grammar({
                 "use_backend",
                 /[ \t]+/,
                 $.backend_ref,
+                /[ \t]+/,
+                optional($.condition),
+            ),
+        use_server_directive: ($) =>
+            seq(
+                "use-server",
+                /[ \t]+/,
+                $.server_name,
                 /[ \t]+/,
                 optional($.condition),
             ),
