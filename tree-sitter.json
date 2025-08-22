@@ -23,7 +23,7 @@
             }
         ],
         "links": {
-            "repository": "https://github.com/ziehnert/tree-sitter/haproxy"
+            "repository": "https://github.com/ziehnert/tree-sitter-haproxy"
         }
     },
     "bindings": {
