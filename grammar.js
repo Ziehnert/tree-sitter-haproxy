@@ -411,7 +411,6 @@ module.exports = grammar({
                 "hdr",
                 "random",
                 "rdp-cookie",
-                "sticky",
             ),
         balance_options: ($) => /.+/,
 

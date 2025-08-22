@@ -583,10 +583,6 @@
         {
           "type": "use_backend_directive",
           "named": true
-        },
-        {
-          "type": "use_server_directive",
-          "named": true
         }
       ]
     }
@@ -877,10 +873,6 @@
         },
         {
           "type": "timeout_directive",
-          "named": true
-        },
-        {
-          "type": "use_server_directive",
           "named": true
         }
       ]
@@ -1694,25 +1686,6 @@
     }
   },
   {
-    "type": "use_server_directive",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "condition",
-          "named": true
-        },
-        {
-          "type": "server_name",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
     "type": "user_directive",
     "named": true,
     "fields": {},
@@ -2118,11 +2091,11 @@
   },
   {
     "type": "size",
-    "named": false
+    "named": true
   },
   {
     "type": "size",
-    "named": true
+    "named": false
   },
   {
     "type": "source",
@@ -2138,10 +2111,6 @@
   },
   {
     "type": "stick",
-    "named": false
-  },
-  {
-    "type": "sticky",
     "named": false
   },
   {
@@ -2198,10 +2167,6 @@
   },
   {
     "type": "url_param",
-    "named": false
-  },
-  {
-    "type": "use-server",
     "named": false
   },
   {
