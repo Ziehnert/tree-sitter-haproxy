@@ -861,6 +861,10 @@
         {
           "type": "SYMBOL",
           "name": "_proxy_directive"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "use_server_directive"
         }
       ]
     },
@@ -979,6 +983,10 @@
         {
           "type": "SYMBOL",
           "name": "generic_directive"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "use_server_directive"
         }
       ]
     },
@@ -1210,6 +1218,39 @@
         {
           "type": "SYMBOL",
           "name": "backend_ref"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[ \\t]+"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "condition"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        }
+      ]
+    },
+    "use_server_directive": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "use-server"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[ \\t]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "server_name"
         },
         {
           "type": "PATTERN",
